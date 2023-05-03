@@ -3,9 +3,12 @@ const inputText = document.querySelector("#text");
 const inputTrennung = document.querySelector("#trennung");
 const outputBeforeDisplay = document.querySelector("#outputBefore");
 const outputAfterDisplay = document.querySelector("#outputAfter");
+const chainSawImg = document.querySelector(".imgbox");
 
 myForm.addEventListener("submit", (event) => {
 	event.preventDefault();
+
+	chainSawImg.classList.add("shake");
 	const whoChecked = document.querySelector('input[name="cutOption"]:checked');
 
 	let text = inputText.value;
@@ -30,4 +33,7 @@ myForm.addEventListener("submit", (event) => {
 	}
 	outputBeforeDisplay.innerHTML = firstString;
 	outputAfterDisplay.innerHTML = secondString;
+	setTimeout(() => {
+		chainSawImg.classList.remove("shake");
+	}, 5000);
 });

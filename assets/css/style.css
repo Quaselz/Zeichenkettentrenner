@@ -58,6 +58,7 @@ section {
 	inset: 4px;
 	z-index: 1;
 	background-color: black;
+	overflow: hidden;
 }
 main {
 	background-color: black;
@@ -272,5 +273,54 @@ input[type="radio"]:checked:after {
 	}
 	100% {
 		transform: rotate(360deg);
+	}
+}
+
+.imgbox {
+	position: absolute;
+	color: white;
+	background-color: transparent;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transform: rotate(90deg) scale(0.95) translate(5px, 5px);
+}
+.shake {
+	animation: shake 5s 1;
+}
+
+@keyframes shake {
+	0% {
+		transform: rotate(90deg) scale(0.95) translate(5px, 5px);
+	}
+	10% {
+		transform: rotate(0deg) scale(1) translate(0, -5px);
+	}
+	20% {
+		transform: rotate(-2deg) scale(1) translate(-10px, 0);
+	}
+	30% {
+		transform: rotate(2deg) scale(0.95) translate(-5px, 10px);
+	}
+	40% {
+		transform: rotate(0deg) scale(1) translate(-10px, 0);
+	}
+	50% {
+		transform: rotate(1deg) scale(0.95) translate(0, -10px);
+	}
+	60% {
+		transform: rotate(0deg) scale(1) translate(-10px, 0);
+	}
+	70% {
+		transform: rotate(-1deg) scale(0.95) translate(0, -10px);
+	}
+	80% {
+		transform: rotate(0deg) scale(1) translate(-10px, 0);
+	}
+	90% {
+		transform: rotate(-2deg) scale(0.95) translate(-10px, 0);
+	}
+	100% {
+		transform: rotate(90deg) scale(0.95) translate(5px, 5px);
 	}
 }
