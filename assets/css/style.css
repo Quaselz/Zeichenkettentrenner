@@ -1,0 +1,40 @@
+@font-face {
+	font-family: rubik;
+	src: url("../fonts/Rubik-VariableFont_wght.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100svh;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+article {
+	width: 100%;
+}
+section > article > div {
+	display: flex;
+}
+
+section > article > div > div {
+	width: 50%;
+}
