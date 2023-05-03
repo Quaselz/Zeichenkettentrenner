@@ -267,15 +267,6 @@ input[type="radio"]:checked:after {
 	animation-delay: -3s;
 }
 
-@keyframes rotate {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
 .imgbox {
 	position: absolute;
 	color: white;
@@ -287,6 +278,15 @@ input[type="radio"]:checked:after {
 }
 .shake {
 	animation: shake 5s 1;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @keyframes shake {
